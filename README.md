@@ -93,3 +93,61 @@ Indicators of compromise including malicious domains, suspicious IP addresses, U
 ### 6. Threat Classification
 
 Based on investigation findings, the activity was classified as a credential harvesting phishing attack targeting Microsoft 365 users through social engineering techniques.
+
+---
+
+## Indicators of Compromise (IOCs)
+
+| IOC Type | Indicator | Description |
+|---|---|---|
+| Domain | login-microsoftverify[.]com | Credential harvesting domain |
+| URL | hxxps://login-microsoftverify[.]com/auth | Fake Microsoft 365 login portal |
+| IP Address | 185.XXX.XXX.XXX | Suspicious hosting infrastructure |
+| Email Subject | Microsoft 365 Password Reset Required | Social engineering lure |
+| Sender Address | security-alert@micr0soft-support[.]com | Spoofed sender address |
+
+---
+
+## MITRE ATT&CK Mapping
+
+| Technique ID | Technique | Description |
+|---|---|---|
+| T1566.002 | Phishing: Link | Malicious phishing link delivery |
+| T1204 | User Execution | User interaction required |
+| T1071 | Application Layer Protocol | Web protocol communication |
+| T1583.001 | Acquire Infrastructure: Domains | Malicious domain registration |
+
+---
+
+## Remediation Recommendations
+
+- Block identified malicious domains and IP addresses
+- Reset potentially compromised user credentials
+- Enable Multi-Factor Authentication (MFA)
+- Conduct phishing awareness training for users
+- Monitor for additional phishing activity targeting Microsoft 365 accounts
+- Add identified IOCs to SIEM and email filtering solutions
+- Review email gateway filtering policies and detection rules
+
+---
+
+## Skills Demonstrated
+
+- Phishing Email Analysis
+- Email Header Investigation
+- IOC Extraction & Documentation
+- Threat Intelligence Correlation
+- URL & Domain Reputation Analysis
+- MITRE ATT&CK Mapping
+- Threat Triage Methodology
+- SOC Investigation Documentation
+- Security Incident Analysis
+- Cyber Threat Investigation
+
+---
+
+## Conclusion
+
+This project simulated a realistic SOC phishing investigation workflow involving threat triage, email analysis, IOC extraction, and remediation planning. The investigation demonstrated the importance of identifying phishing indicators, validating sender legitimacy, and leveraging threat intelligence resources to classify and contain phishing-related threats.
+
+The lab provided practical experience with SOC investigation methodologies, phishing detection techniques, and incident documentation processes commonly used in security operations environments.
