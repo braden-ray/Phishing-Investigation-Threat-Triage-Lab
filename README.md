@@ -151,3 +151,28 @@ Based on investigation findings, the activity was classified as a credential har
 This project simulated a realistic SOC phishing investigation workflow involving threat triage, email analysis, IOC extraction, and remediation planning. The investigation demonstrated the importance of identifying phishing indicators, validating sender legitimacy, and leveraging threat intelligence resources to classify and contain phishing-related threats.
 
 The lab provided practical experience with SOC investigation methodologies, phishing detection techniques, and incident documentation processes commonly used in security operations environments.
+
+---
+
+# Investigation Screenshots
+
+## Initial Phishing Email
+![Phishing Email](Screenshots/Phishing-Email.png)
+
+## Email Header Analysis
+![Header Analysis](Screenshots/email-header-analysis.png)
+
+## VirusTotal Domain Reputation Analysis
+![VirusTotal](Screenshots/virustotal-results.png)
+
+## AbuseIPDB IP Reputation Analysis
+![AbuseIPDB](Screenshots/Abuseipdb-analysis.png)
+
+## IOC Documentation
+![IOC Documentation](Screenshots/ioc-documentation.png)
+
+## MITRE ATT&CK Mapping
+![MITRE Mapping](Screenshots/Mitre-Mapping.png)
+
+## Final Investigation Summary
+![Investigation Summary](Screenshots/investigation-summary.png)
