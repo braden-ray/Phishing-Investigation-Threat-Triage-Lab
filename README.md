@@ -42,3 +42,54 @@ The objective of this lab was to simulate the workflow of a SOC analyst handling
 | Investigation Type | Phishing Investigation & Threat Triage |
 | Environment | Isolated Home Lab |
 | Focus Areas | Email Security, IOC Analysis, Threat Investigation |
+
+---
+
+## Incident Scenario
+
+A user reported receiving a suspicious Microsoft 365 password reset email requesting immediate account verification. The email contained a hyperlink directing the user to a spoofed Microsoft login page designed to harvest user credentials.
+
+The SOC investigation focused on validating the legitimacy of the sender, analyzing email headers, reviewing embedded URLs, identifying indicators of compromise (IOCs), and determining the overall threat severity of the phishing attempt.
+
+The investigation concluded that the email was a credential harvesting phishing attack leveraging spoofed branding and deceptive social engineering techniques.
+
+---
+
+## Initial Alert
+
+| Field | Value |
+|---|---|
+| Alert Type | Suspicious Phishing Email |
+| Reported By | End User |
+| Targeted Platform | Microsoft 365 |
+| Investigation Priority | Medium |
+| Initial Severity | Suspicious |
+| Investigation Status | Confirmed Phishing |
+
+---
+
+## Investigation Process
+
+### 1. Initial Email Review
+
+The suspicious email was reviewed to identify indicators commonly associated with phishing attempts, including spoofed branding, urgent language, suspicious sender information, and embedded hyperlinks.
+
+### 2. Email Header Analysis
+
+Email headers were analyzed to validate sender legitimacy and identify potential spoofing attempts. SPF, DKIM, and DMARC validation checks were reviewed along with originating IP information and relay path analysis.
+
+### 3. URL & Domain Investigation
+
+Embedded URLs were extracted and analyzed using multiple threat intelligence platforms to determine domain reputation, registration history, and potential malicious classification.
+
+### 4. Threat Intelligence Correlation
+
+Threat intelligence platforms including VirusTotal, Cisco Talos Intelligence, AbuseIPDB, and WHOIS lookup services were used to investigate domains, IP addresses, and associated indicators.
+
+### 5. IOC Extraction
+
+Indicators of compromise including malicious domains, suspicious IP addresses, URLs, and file hashes were documented and categorized for future detection and response activities.
+
+### 6. Threat Classification
+
+Based on investigation findings, the activity was classified as a credential harvesting phishing attack targeting Microsoft 365 users through social engineering techniques.
